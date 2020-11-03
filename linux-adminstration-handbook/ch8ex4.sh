@@ -5,5 +5,5 @@ for i in {2..10}
 do
 if [ -d “192.168.1.$i:/home/greg” ]
 then 
-rsync -r 192.168.1.$i/home/greg/.[a-z]* 192.168.11/home/master-greg/startup-scrips
+rsync -r 192.168.1.$i/home/greg/.[a-z]* 192.168.11/home/master-greg/startup-scrips/$i
 done
