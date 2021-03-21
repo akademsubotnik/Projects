@@ -20,6 +20,7 @@ elif [ "${1: -4}" == ".rar" ]; then
 	unrar e $1
 elif [ "${1: -4}" == ".tgz" ]; then
 	echo ".tgz file"
+	tar -xf $1
 else 
 	echo "unsupported file type"
 fi
