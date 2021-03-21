@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# archive formats to consider: .zip , .gz , .bz2 , .7z , .rar , .tgz
+# archive formats to consider: .zip , .tar , .rar , .7z , .gz , .gzip , .bz2 , .tgz
 if [ "$#" -ne 1 ]; then
 	echo "Illegal number of parameters"
 elif [ "${1: -4}" == ".zip" ]; then
@@ -17,7 +17,7 @@ elif [ "${1: -3}" == ".7z" ]; then
 	7zr e $1
 elif [ "${1: -4}" == ".rar" ]; then
 	echo ".rar file"
-	unrar -e
+	unrar e $1
 elif [ "${1: -4}" == ".tgz" ]; then
 	echo ".tgz file"
 else 
