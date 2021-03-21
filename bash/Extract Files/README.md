@@ -1,3 +1,3 @@
-An sh script that will extract an archive.  Will work with .gz .tar .bz .bz2 .zip etc
+An sh script that will extract an archive.  Will work with .zip , .gz , .bz2 , .7z , .rar , .tgz
 
 .7z : may require additional libraries to be installed
