@@ -18,8 +18,6 @@ elif [ "${1: -4}" == ".rar" ]; then
 elif [ "${1: -3}" == ".7z" ]; then
 	echo ".7z file"
 	7zr e $1
-elif [ "${1: -4}" == ".gzip" ]; then
-	echo ".gzip file"
 elif [ "${1: -4}" == ".tgz" ]; then
 	echo ".tgz file"
 else 
