@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# archive formats to consider: .zip , .tar , .rar , .7z , .gz , .gzip , .bz2 , .tgz
+# archive formats to consider: .zip , .gz , .bz2 , .7z , .rar , .tgz
 if [ "$#" -ne 1 ]; then
 	echo "Illegal number of parameters"
 elif [ "${1: -4}" == ".zip" ]; then
