@@ -14,8 +14,10 @@ elif [ "${1: -4}" == ".bz2" ]; then
 	bzip2 -d $1
 elif [ "${1: -4}" == ".rar" ]; then
 	echo ".rar file"
+	unrar -e
 elif [ "${1: -3}" == ".7z" ]; then
 	echo ".7z file"
+	7zr e $1
 elif [ "${1: -4}" == ".gzip" ]; then
 	echo ".gzip file"
 elif [ "${1: -4}" == ".tgz" ]; then
